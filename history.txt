@@ -1,0 +1,359 @@
+    1  ls
+    2  ls /data
+    3  ls /etc/perl
+    4  ls /
+    5  pwd
+    6  mkdir Learning_unix
+    7  ls
+    8  cd Learning_unix
+    9  mkdir Outer_directory
+   10  cd Outer_directory
+   11  mkdir Inner_Directory/
+   12  cd Inner_Directory/
+   13  cd/c/Users/Tkone/
+   14  cd/
+   15  pwd
+   16  cd home
+   17  cd c
+   18  cd /
+   19  / Users
+   20  cd /Users
+   21  pwd
+   22  pwd
+   23  pwd
+   24  cd /Users/Tkone/
+   25  cd ~
+   26  pwd
+   27  cd /
+   28  pwd
+   29  cd ~
+   30  pwd
+   31  cd
+   32  pwd
+   33  cd ~/Learning_unix
+   34  cd ../..
+   35  cd ~
+   36  ls -l
+   37  ls -R
+   38  man ls
+   39  man cd
+   40  manual ls
+   41  HELP
+   42  cd ~/Learning_unix/Outer_directory/
+   43  rmdir Inner_Directory/
+   44  cd ..
+   45  rmdir Outer_directory/
+   46  ls
+   47  cd ~
+   48  cd Learning_unix/
+   49  cd ~
+   50  git config --list --show-origin
+   51  git version
+   52  git config --global user.name "Tendani Kone"
+   53  git config --global user.email millytendikone@gmail.com
+   54  git config --global core.editor "code --wait"
+   55  git config --global -e
+   56  git config --global init.defaultBranch main
+   57  git config --list
+   58  git add -h
+   59  cd C:/Users/tkone/my_project
+   60  git init
+   61  git status
+   62  echo 'My Project' > README
+   63  git status
+   64  git add README
+   65  git status
+   66  git add *.c
+   67  pwd
+   68  git commit
+   69  git clone https://github.com/schacon/simplegit-progit
+   70  git log
+   71  cd simplegit-progit
+   72  git log
+   73  git log -p -2
+   74  pwd
+   75  git clone https://github.com/schacon/ticgit
+   76  cd ticgit
+   77  git remote
+   78  git remote -v
+   79  git remote
+   80  git remote add pb https://github.com/paulboone/ticgit
+   81  git remote -v
+   82  git fetch pb
+   83  git remote show origin
+   84  git remote rename pb paul
+   85  git remote
+   86  git remote remove paul
+   87  git remote
+   88  git tag
+   89  git tag -l "v1.8.5*"
+   90  git tag -a v1.4 -m "my version 1.4"
+   91  git tag
+   92  git show v1.4
+   93  git tag v1.4-lw
+   94  git show v1.4-lw
+   95  git log --pretty=oneline
+   96  git config --global alias.co checkout
+   97  git config --global alias.br branch
+   98  git config --global alias.ci commit
+   99  git config --global alias.st status
+  100  git config --global alias.last 'log -1 HEAD'
+  101  git add README test.rb LICENSE
+  102  git br testing
+  103  cd ~
+  104  git add README test.rb LICENSE
+  105  cd C:/Users/user/my_project
+  106  cd C:Users/Tkone/my_project
+  107  mkdir Moon
+  108  cd ~
+  109  cd C:/Users/Tkone/Projects
+  110  mkdir Moon
+  111  cd Moon
+  112  git init
+  113  ls
+  114  ls -a
+  115  open .git
+  116  open ./ ../ .git
+  117  echo hello > file1.txt
+  118  echo hello > file2.txt
+  119  git status
+  120  git add .
+  121  git st
+  122  echo world >> file1.txt
+  123  git st
+  124  git add file1.txt
+  125  git st
+  126  git ci
+  127  echo test >>file1.txt
+  128  git ci -am "Fix the bug that prevented te users from logging into the signup area"
+  129  rm file2.txt
+  130  gt st
+  131  git st
+  132  git ls-files
+  133  git add file2.txt
+  134  git ls-files
+  135  git st
+  136  git ci -m "Remove unused code."
+  137  ls
+  138  mv file1.txt main.js
+  139  git st
+  140  git ad file1.txt
+  141  git add file1.txt
+  142  git add main.js
+  143  git st
+  144  git mv main.js file1.js
+  145  git st
+  146  git commit -m "Refactor code."
+  147  mkdir logs
+  148  echo hello > logs/dev.log
+  149  git st
+  150  echo logs/ > .gitignore
+  151  code .gitignore
+  152  git st
+  153  git add .gitignore
+  154  git commit -m "Add gitignore"
+  155  mkdir bin
+  156  echo hello >bin/app/bin
+  157  git st
+  158  echo hello > bin/app.bin
+  159  git st
+  160  git ls-files
+  161  git rm --bin/
+  162  git add .
+  163  git ci -m "Add bin"
+  164  code .gitignore
+  165  git st
+  166  git add .
+  167  git ci -m "Include bin in gitignore"
+  168  echo helloworld > bin/app.bin
+  169  git st
+  170  gt ls-files
+  171  git ls-files
+  172  git rm -h
+  173  git rm --cached bin/
+  174  git rm --cached -r bin/
+  175  git ls-files
+  176  git st
+  177  git ci -m "Remove bin directory accidentally commited"
+  178  echo sky >> file1.js
+  179  echo sky > file2.js
+  180  git st
+  181  git st -s
+  182  git add file1.js
+  183  git st -s
+  184  echo ocean >> file1.js
+  185  git st -s
+  186  git add file1.js
+  187  git add file2.js
+  188  git st -s
+  189  git diff --staged
+  190  git diff
+  191  git st -s
+  192  code file1.js
+  193  git st -s
+  194  git diff
+  195  git log
+  196  git log --oneline
+  197  git log --online --reverse
+  198  git log --onelone --reverse
+  199  git log --oneline --reverse
+  200  git show last
+  201  git last
+  202  git show HEAD~1
+  203  git ls tree HEAD~1
+  204  git st -s
+  205  git restore --staged file1.js
+  206  git st -s
+  207  git restore --staged file2.js
+  208  git st -s
+  209  git restore .
+  210  git st -s
+  211  git clean
+  212  git clean -h
+  213  git clean -fd
+  214  git st -s
+  215  git rm file1.js
+  216  git st -s
+  217  git ci -m"Delete file1.js"
+  218  git log --oneline
+  219  git restore --source=HEAD~1 file1.js
+  220  git st -s
+  221  git add file1.js
+  222  git st -s
+  223  git commit .
+  224  git st -s
+  225  git br
+  226  git checkout -b feature-readme-instrustions
+  227  git br
+  228  git checkout main
+  229  git br
+  230  git checkout feature-readme-instrustions 
+  231  echo test >README..md
+  232  git rm README..md
+  233  rm README..md
+  234  echo test >README.md
+  235  git add
+  236  git add README.md
+  237  git st -s
+  238  git ci -m"instructions"
+  239  code README.md
+  240  git st
+  241  git add README.md
+  242  git ci -m"updated readme"
+  243  git checkout main
+  244  git checkout feature-readme-instrustions 
+  245  git st
+  246  git push
+  247  git push -u feature-readme-instrustions
+  248  git log --oneline --decorate
+  249  git checkout main
+  250  git checkout -b iss53
+  251  echo index.html
+  252  git commit -a -m"Create new footer [issue 53]"
+  253  git checkout main
+  254  git checkout -b hotfix
+  255  vim index,html
+  256  cd/c:/Users/Tkone/Projects/Moon
+  257  cd/c:/Users/Tkone/Projects/Moon
+  258  cd /c
+  259  clear
+  260  git config --global init.defaultBranch master
+  261  git log
+  262  cd ~
+  263  git config --global init.defaultBranch master
+  264  git log
+  265  git config
+  266  git config --list
+  267  cd Desktop
+  268  mkdir test_repo
+  269  cd test_repo
+  270  git init
+  271  git ci
+  272  cd ..
+  273  cd test_repo
+  274  git add README.md
+  275  git st
+  276  git ci -m"added README.md"
+  277  git st
+  278  git st
+  279  git add README.md
+  280  git st
+  281  git ci
+  282  git checkout -b new
+  283  git st
+  284  git add .
+  285  git st
+  286  git ci -m"first commit on new branch"
+  287  git checkout master
+  288  git add .
+  289  git st
+  290  git ci -m"added test.py"
+  291  git checkout new
+  292  git merge master
+  293  git st
+  294  git checkout master
+  295  clear
+  296  cd ~
+  297  cd Desktop
+  298  mkdir git-basic-exercises
+  299  cd git-basic-exercises
+  300  ls -a
+  301  git init
+  302  ls -a
+  303  git st
+  304  touch README.md
+  305  ls -a
+  306  git st
+  307  git log
+  308  git add README.md 
+  309  git st
+  310  git restore --staged
+  311  git restore --README.md
+  312  git restore -s
+  313  git restore -s README.md
+  314  git restore --staged README.md
+  315  git st
+  316  git rm --cached README.md 
+  317  git st
+  318  git add.
+  319  git add .
+  320  git st
+  321  git ci -m "initial commit"
+  322  git log
+  323  nano README.md 
+  324  cat README.md 
+  325  git st
+  326  git add README.md 
+  327  git st
+  328  git ci -m "second commit"
+  329  gt st
+  330  nano README.md 
+  331  cat README.md 
+  332  gt st
+  333  git st
+  334  git add README.md 
+  335  git ci -m "third commit"
+  336  git log
+  337  git checkout commit a4cf7e56359d63caa614646f395e8ae3eddc340e
+  338  git checkout a4cf7e56359d63caa614646f395e8ae3eddc340e
+  339  cat README.md 
+  340  git checkout master
+  341  cat README.md 
+  342  git branch
+  343  git branch milkshake-flavours
+  344  git branch
+  345  checkout milkshake-flavours
+  346  git checkout milkshake-flavours
+  347  git branch
+  348  nano milkshakes.md
+  349  git st
+  350  git add milkshakes.md 
+  351  git st -m "added initial flavours"
+  352  git ci -m"added initial flavours"
+  353  git log
+  354  git checkout master
+  355  git log
+  356  git checkout -b history
+  357  git log
+  358  git branch
+  359  history > history.txt
